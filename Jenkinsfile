@@ -1,9 +1,10 @@
 pipeline {
     agent any
-	tools{
+
+    tools{
         jdk 'JDK 25'
         maven 'Maven-3.10'
-    	}
+    }
     stages {
         stage('SCM Synchronization') {
             steps {
@@ -35,10 +36,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ CI Pipeline completed flawlessly! Code stability confirmed.'
+            echo '✅ CI Pipeline is completed now flawlessly! Code stability confirmed.'
         }
         failure {
-            echo '❌ CI Pipeline is broken now. Check console logs for build failures or breaking test regressions.'
+            echo '❌ CI Pipeline broken. Check console logs for build failures or breaking test regressions.'
         }
     }
 }
