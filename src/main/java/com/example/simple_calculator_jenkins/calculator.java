@@ -7,6 +7,20 @@ public class calculator {
     public int subtract(int a, int b) { 
         return a - b; 
     }
+    public boolean isPositive(int number) {
+        if (number > 0) {
+            return true;
+        } else if(number < 0){
+            return false;
+        }
+        else if(number > 0){
+            return true;
+        }
+        else {
+        	return false;
+
+    }
+    }
 
     public static void main(String[] args) {
         calculator calc = new calculator();
